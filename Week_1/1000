@@ -1,0 +1,5 @@
+a,b=map(int,input().split())
+print(a+b)
+
+#split()<- () 안에 있는걸 기준으로 자른다.
+#map 숫자를 순서대로 함수에 적용한다.
