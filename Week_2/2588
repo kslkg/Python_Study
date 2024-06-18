@@ -1,0 +1,11 @@
+num1=int(input())
+num2=int(input())
+
+a=(num2%10)*num1
+b=((num2%100)// 10) * num1
+c=(num2// 100) * num1
+
+print(a)
+print(b)
+print(c)
+print(num1*num2)
