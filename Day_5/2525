@@ -1,0 +1,13 @@
+H,M=map(int,input().split())
+Plus=int(input())
+M=M + Plus
+
+
+if M>=60:
+    Num1=M//60
+    H=H+Num1
+    M=M%60
+if H>=24:
+    H=H%24
+    
+print(H,M)
