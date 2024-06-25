@@ -1,0 +1,11 @@
+Num=int(input())
+count=int(input())
+Lcost=0
+for I in range(0,count):
+    A,B=map(int,input().split())
+    Cost=A*B
+    Lcost=Cost+Lcost
+if Num ==Lcost:
+    print("Yes")
+else:
+    print("No")
