@@ -1,0 +1,7 @@
+import sys  #sys 모듈 읽는 코드 속도가 input보다 빠르다고한다.
+
+t = int(sys.stdin.readline())
+
+for I in range(t):
+    a,b = map(int, sys.stdin.readline().split())
+    print(a+b)
