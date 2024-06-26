@@ -1,0 +1,6 @@
+Num = int(input())
+if Num % 4==0:
+    for I in range(0,Num//4):
+        print("long")
+    
+print("int")
