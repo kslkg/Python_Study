@@ -1,0 +1,4 @@
+Num = int(input())
+for I in range(1,Num+1):
+    A,B=map(int,input().split())
+    print("Case #"+str(I)+":",A+B)
