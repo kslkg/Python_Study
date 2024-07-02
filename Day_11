@@ -1,3 +1,0 @@
-a=int(input())
-for I in range(a):
-    print((" " * (a-I-1))+("*"*(I+1)))
