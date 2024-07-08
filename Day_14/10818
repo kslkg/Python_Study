@@ -1,0 +1,10 @@
+Num= int(input())
+A=list(map(int,input().split()))
+Max=A[0]
+Min=A[0]
+for I in range(Num):
+    if Max < A[I]:
+        Max= A[I]
+    if Min > A[I]:
+        Min = A[I]
+print(Min,Max)
