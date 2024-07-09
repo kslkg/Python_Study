@@ -1,0 +1,10 @@
+N,M=map(int,input().split())
+box=[0] * N
+
+for I in range(M):
+    i,j,k=list(map(int,input().split()))
+    for x in range(i, j+1):
+        box[x-1] = k
+        
+for i in range(N): #출력
+    print(box[i], end=' ')
