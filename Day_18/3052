@@ -1,0 +1,42 @@
+Num1=[]
+im=10
+for i in range(10):
+    a = int(input())
+    b = a % 42
+    if b not in Num1:
+        Num1.append(b)
+print (len(Num1))
+-------- c version-------
+#include <stdio.h>
+
+int main()
+{
+    int arr[10];
+    int num;
+    int result=0;
+    for(int i =0; i<10;i++)
+    {
+        scanf("%d",&num);
+        arr[i]=num%42;
+        
+    }
+    
+    for(int i=0;i<10;i++)
+    {
+        int count=0;
+        for(int j=i+1;j<10;j++)
+        {
+            if (arr[i] == arr[j])
+            {
+                count++;
+            }
+        }
+        if (count==0) 
+        {
+            result++;
+        }
+    }
+    printf("%d",result);
+    return 0;
+}
+
