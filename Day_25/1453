@@ -1,0 +1,10 @@
+n = int(input())
+com = list(map(int, input().split()))
+cut=0
+count=[]
+for i in range(n):
+    if com[i] in count:
+        cut += 1
+    else:
+        count.append(com[i])  
+print(cut)
